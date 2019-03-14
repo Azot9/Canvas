@@ -1,0 +1,12 @@
+body{
+	display: flex;
+	margin: 0;
+	flex-direction: column;
+}
+canvas{
+	margin: 10vh auto;
+	border: 1px solid black;
+}
+#graphics{
+	background-color: black;
+}
