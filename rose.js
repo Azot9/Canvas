@@ -29,6 +29,7 @@ function rose() {
 		}
 	}
 
+	graphics.restore();
 
 	function drawRose(x1, y1, x2, y2) {
 		graphics.moveTo(x1, y1);

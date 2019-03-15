@@ -2,10 +2,12 @@
 
 window.addEventListener("load", download);
 
+
 function download() {
 	let canvas = document.getElementById("download");
 	let graphics = canvas.getContext("2d");
 
+	graphics.save();
 	graphics.translate(350, 250);
 	graphics.lineWidth = 1;
 
@@ -20,6 +22,8 @@ function download() {
 	count(-PI/2, PI/2, step1);
 	//debugger;
 	count(-PI/2, (-3/2)*PI, step2);
+
+	
 
 	function count(start, end, step) {
 		if (start <  end) {
@@ -52,5 +56,7 @@ function download() {
 		graphics.lineTo(x2, y2);
 		graphics.stroke();
 	}
+
+
 
 }
